@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const calculateButtonHeight = 80.0;
+final calculateButtonHeight = Dimensions.screenHeight / 16;
 const moneyColor = Color(0xFF85BB65);
 
 const titleStyle = TextStyle(
