@@ -1,6 +1,7 @@
 import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
 import 'package:money_money_money/constants.dart';
+import 'package:money_money_money/utils/dimensions.dart';
 
 class BottomButton extends StatelessWidget {
   const BottomButton({
@@ -32,11 +33,14 @@ class BottomButton extends StatelessWidget {
         ),
         color: Colors.orangeAccent,
         width: double.infinity,
-        margin: const EdgeInsets.only(top: 10.0),
-        padding: const EdgeInsets.only(bottom: 20.0),
+        margin: EdgeInsets.symmetric(
+            horizontal: Dimensions.screenWidth / 40,
+            vertical: Dimensions.screenWidth / 20),
+        padding: EdgeInsets.symmetric(vertical: Dimensions.screenWidth / 50),
         height: calculateButtonHeight,
       ),
     );
   }
 }
+
 
