@@ -9,6 +9,8 @@ import 'package:money_money_money/constants.dart';
 import 'package:money_money_money/components/round_icon_button.dart';
 import 'package:money_money_money/components/bottom_button.dart';
 
+import '../utils/dimensions.dart';
+
 bool cpCardPressed = false;
 bool webdCardPressed = false;
 
@@ -34,6 +36,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Dimensions.init(context: context); //instantiate the context here
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black.withOpacity(0.70),
